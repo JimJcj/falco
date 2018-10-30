@@ -10,6 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>eureka-server</module>
+        <module>gateway</module>
+        <module>metric-api</module>
+        <module>pay-metric-web</module>
     </modules>
 
 
@@ -26,7 +29,6 @@
                         <target>1.8</target>
                     </configuration>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>
