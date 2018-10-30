@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class MetircApiProvider {
+public class PayMetricApiApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MetircApiProvider.class, args);
+        SpringApplication.run(PayMetricApiApplication.class, args);
     }
 }

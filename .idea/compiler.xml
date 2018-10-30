@@ -9,7 +9,7 @@
         <module name="api-gateway" />
         <module name="eureka-server" />
         <module name="eurekaserver" />
-        <module name="metric-api" />
+        <module name="pay-metric-api" />
         <module name="pay-metric-web" />
       </profile>
     </annotationProcessing>
