@@ -10,9 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>eureka-server</module>
-        <module>gateway</module>
-        <module>metric-api</module>
+        <module>api-gateway</module>
+        <module>pay-metric-api</module>
         <module>pay-metric-web</module>
+        <module>zipkin-server</module>
     </modules>
 
 

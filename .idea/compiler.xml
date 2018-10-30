@@ -11,6 +11,7 @@
         <module name="eurekaserver" />
         <module name="pay-metric-api" />
         <module name="pay-metric-web" />
+        <module name="zipkin-server" />
       </profile>
     </annotationProcessing>
   </component>
