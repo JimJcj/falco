@@ -1,0 +1,28 @@
+zuul:
+  ratelimit:
+    key-prefix: your-prefix
+    enabled: true
+    repository: BUCKET4J_JCACHE
+    behind-proxy: true
+    default-policy-list: #optional - will apply unless specific policy exists
+    - limit: 10 #optional - request number limit per refresh interval window
+      quota: 1000 #optional - request time limit per refresh interval window (in seconds)
+      refresh-interval: 60 #default value (in seconds)
+      type: #optional
+      - user
+      - origin
+      - url
+  policy-list:
+    myServiceId:
+    - limit: 10 #optional - request number limit per refresh interval window
+      quota: 1000 #optional - request time limit per refresh interval window (in seconds)
+      refresh-interval: 60 #default value (in seconds)
+      type: #optional
+      - user
+      - origin
+      - url
+    - type: #optional value for each type
+      - user=anonymous
+      - origin=localhost
+      - url=/api #url prefix
+#      - role=user

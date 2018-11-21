@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class PayMetiryWebConsumer {
+public class PayMetricWebApplication {
 
     @Bean
     public RestTemplate restTemplate() {
@@ -17,6 +17,6 @@ public class PayMetiryWebConsumer {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(PayMetiryWebConsumer.class, args);
+        SpringApplication.run(PayMetricWebApplication.class, args);
     }
 }

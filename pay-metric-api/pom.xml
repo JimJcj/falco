@@ -9,7 +9,7 @@
     <!--</parent>-->
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>metric-api</artifactId>
+    <artifactId>pay-metric-api</artifactId>
 
 
     <parent>
