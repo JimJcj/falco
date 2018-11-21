@@ -8,6 +8,7 @@ spring:
     host: 192.168.127.134
     port: 6379
     password: foobared
+
 #server config
 server:
   port: 9301
@@ -22,12 +23,12 @@ eureka:
 zuul:
   ratelimit:
     enabled: true
-    key-prefix: your-prefix
-    repository: REDIS
-    default-policy-list: #optional - will apply unless specific policy exists
-    - limit: 10 #optional - request number limit per refresh interval window
-      quota: 1000 #optional - request time limit per refresh interval window (in seconds)
-      refresh-interval: 60 #default value (in seconds)
+    key-prefix: your-prefix #对应用来标识请求的key的前缀
+    repository: REDIS #对应存储类型（用来存储统计信息）
+    default-policy-list: #optional - will apply unless specific policy exists 默认策略
+    - limit: 10 #optional - request number limit per refresh interval window 可选- 每个刷新时间窗口对应的请求数量限制
+      quota: 1000 #optional - request time limit per refresh interval window (in seconds) 可选-  每个刷新时间窗口对应的请求时间限制（秒）
+      refresh-interval: 60 #default value (in seconds) 刷新时间窗口的时间，默认值 (秒)
   routes:
     metric-api:
       path: /api/**
